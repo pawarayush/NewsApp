@@ -81,6 +81,8 @@ class MainActivity : AppCompatActivity() {
         var myAdapter = MyAdapter(newsArrayList, this)
         myRecyclerView.adapter = myAdapter
 
+
+
         myAdapter.setItemClickListener(object : MyAdapter.onItemClickListener {
             override fun onItemClicking(position: Int) {
                 // on clicking each item , what action do you want to perform

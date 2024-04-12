@@ -25,12 +25,12 @@ class NewsDetailActivity : AppCompatActivity() {
         val newsContent = intent.getStringExtra("newscontent")
         val imageId = intent.getIntExtra("imageId", R.drawable.img1)
 
-        val headingTV = binding.newsHeading
-        val headingIV = binding.newsImage
-        val newsContentTV = binding.newsContent
+//        val headingTV = binding.newsHeading
+//        val headingIV = binding.newsImage
+//        val newsContentTV = binding.newsContent
 
-        headingTV.text = heading
-        newsContentTV.text = newsContent
-        headingIV.setImageResource(imageId)
+        binding.newsHeading.text = heading
+       binding.newsContent.text = newsContent
+        binding.newsImage.setImageResource(imageId)
     }
 }
